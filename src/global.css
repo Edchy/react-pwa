@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Merriweather&display=swap");
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Merriweather", serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:not([class]) {
+  text-underline-offset: 0.25em;
+  text-decoration-color: blue;
+  text-decoration-thickness: 2px;
+}
+
+:root {
+  accent-color: red;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  /* min-height: 100vh; */
+}
+body {
+  font-family: var(--font-primary);
+  color: white;
+  background-color: #0a0a0a;
+}
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-primary);
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 0.9;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-size: clamp(1.944rem, 0.3347rem + 6.8662vi, 5.4844rem);
+  background: -webkit-linear-gradient(#eee, rgb(253, 167, 81));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-top: 5rem;
+  max-width: 25ch;
+}
+h2 {
+  background: -webkit-linear-gradient(rgb(253, 167, 81), #eee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+main {
+  width: min(100% - 3rem, 1260px);
+  margin-inline: auto;
+}
+header {
+  /* transition: all 0.2s ease-in-out; */
+  border-radius: 12px;
+  /* max-width: 1200px; */
+  margin-inline: auto;
+  width: min(100% - 0.5rem, 1260px);
+}
+
+.scrolled {
+  border-bottom: 2px solid #fbaf63;
+  background-color: #08051c;
+}
+ul {
+  list-style: none;
+}
+
+.light {
+  color: gray;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.beer {
+  /* border: 0.5px solid #fff; */
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background-color: rgb(23, 21, 20);
+}
+
+.logo {
+  color: #fbaf63;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+}
+
+.hero {
+  min-height: 75vh;
+}
