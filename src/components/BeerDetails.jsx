@@ -14,10 +14,10 @@ function BeerDetails() {
     async function fetchData() {
       setIsLoading(true);
       try {
-        // const res = await fetch(
-        //   `https://filthy-colt-fedora.cyclic.app/beers/?_id=${id}`
-        // );
-        const res = await fetch(`http://localhost:3000/beers?_id=${id}`);
+        const res = await fetch(
+          `https://filthy-colt-fedora.cyclic.app/beers/?_id=${id}`
+        );
+        // const res = await fetch(`http://localhost:3000/beers?_id=${id}`);
         const beer = await res.json();
 
         setData(beer[0]);
