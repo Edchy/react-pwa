@@ -94,7 +94,7 @@ function BeerDetails() {
                     ))}
                   </details>
                   <details>
-                    <summary>Smakbeskrivning</summary>
+                    <summary>Smakbeskrivning.</summary>
                     {Object.entries(data.smakbeskrivning).map(
                       ([key, value]) => (
                         <p key={key}>{`${key}: ${value}`}</p>
