@@ -1,4 +1,5 @@
-if (!window.Promise) window.Promise = Promise;
+// import "promise-polyfill/src/polyfill";
+// import "whatwg-fetch";
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
