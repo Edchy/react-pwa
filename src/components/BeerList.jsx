@@ -44,7 +44,7 @@ function BeerList() {
       ) : (
         <>
           {" "}
-          <ul className="mt-12 p-12 gap-4 grid grid-cols-autofit-250">
+          <ul className="mt-12 gap-4 grid grid-cols-autofit-250">
             {data.map((item) => (
               <Beer key={item._id} data={item} />
             ))}

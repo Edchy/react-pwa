@@ -55,7 +55,7 @@ h2 {
   -webkit-text-fill-color: transparent;
 }
 main {
-  width: min(100% - 3rem, 1260px);
+  width: min(100% - 2rem, 1260px);
   margin-inline: auto;
 }
 header {

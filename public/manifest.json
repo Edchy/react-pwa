@@ -5,7 +5,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#FBAF63",
-  "description": "Beer explorer",
+  "description": "Search for beers and breweries, and explore the world of craft beer.",
   "id": "Hoppy Beer Explorer",
   "start_url": "./",
   "icons": [
@@ -115,13 +115,15 @@
       "src": "/screenshots/screen-narrow.jpg",
       "type": "image/jpg",
       "sizes": "540x720",
-      "form_factor": "narrow"
+      "form_factor": "narrow",
+      "label": "Search for beers and breweries, and explore the world of craft beer."
     },
     {
       "src": "/screenshots/screen-wide.jpg",
       "type": "image/jpg",
       "sizes": "720x540",
-      "form_factor": "wide"
+      "form_factor": "wide",
+      "label": "Search for beers and breweries, and explore the world of craft beer."
     }
   ]
 }
