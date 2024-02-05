@@ -6,16 +6,18 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME).then((cache) => {
       console.log("[Service Worker] Precaching App Shell,", cache);
-      cache.addAll([
-        "/",
-        "/index.html",
-        "/js/app.js",
-        "/images/hoppy.jpg",
-        "/images/hoppy2.jpg",
-        "/images/hoppy3.jpg",
-        "/images/logo.svg",
-        // "service-worker.js",
-      ]);
+      // cache.addAll([
+      //   "/",
+      //   "/index.html",
+      //   "/js/app.js",
+      //   "/images/hoppy.jpg",
+      //   "/images/hoppy2.jpg",
+      //   "/images/hoppy3.jpg",
+      //   "/images/logo.svg",
+
+      // ]);
+      cache.add("/");
+      cache.add("/js/app.js");
     })
   );
 });
