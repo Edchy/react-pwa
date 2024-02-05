@@ -9,7 +9,7 @@ function Home() {
           className="bg-orange-800 block mt-24 p-2 rounded-xl hover:border-orange-400 border-2 border-orange-800 transition-colors duration-100 ease-in-out m-auto w-max"
           to="/beers"
         >
-          <span>Get beers</span>
+          <span>Get Beers</span>
         </Link>
       </section>
       <section className="grid grid-cols-1 md:grid-cols-2 gap-8">

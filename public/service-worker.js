@@ -11,6 +11,10 @@ self.addEventListener("install", (event) => {
         "index.html",
         "https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Merriweather&display=swap",
         "js/app.js",
+        "images/hoppy.jpg",
+        "images/hoppy2.jpg",
+        "images/hoppy3.jpg",
+        "images/logo.svg",
         // "service-worker.js",
       ]);
     })
