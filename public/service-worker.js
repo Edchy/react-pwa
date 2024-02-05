@@ -1,5 +1,5 @@
-const CACHE_STATIC_NAME = "static-v3";
-const CACHE_DYNAMIC_NAME = "dynamic-v3";
+const CACHE_STATIC_NAME = "static-v1";
+const CACHE_DYNAMIC_NAME = "dynamic-v1";
 
 self.addEventListener("install", (event) => {
   console.log("[Service Worker] Installing...", event);
@@ -9,7 +9,6 @@ self.addEventListener("install", (event) => {
       cache.addAll([
         "/",
         "index.html",
-        "https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&family=Merriweather&display=swap",
         "js/app.js",
         "images/hoppy.jpg",
         "images/hoppy2.jpg",
