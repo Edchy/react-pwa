@@ -8,12 +8,12 @@ self.addEventListener("install", (event) => {
       console.log("[Service Worker] Precaching App Shell,", cache);
       cache.addAll([
         "/",
-        "index.html",
-        "js/app.js",
-        "images/hoppy.jpg",
-        "images/hoppy2.jpg",
-        "images/hoppy3.jpg",
-        "images/logo.svg",
+        "/index.html",
+        "/js/app.js",
+        "/images/hoppy.jpg",
+        "/images/hoppy2.jpg",
+        "/images/hoppy3.jpg",
+        "/images/logo.svg",
         // "service-worker.js",
       ]);
     })
