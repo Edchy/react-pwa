@@ -1,4 +1,4 @@
-const CACHE_STATIC_NAME = "static-v7";
+const CACHE_STATIC_NAME = "static-v8";
 const CACHE_DYNAMIC_NAME = "dynamic-v3";
 
 self.addEventListener("install", (event) => {
@@ -6,22 +6,16 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_STATIC_NAME).then((cache) => {
       console.log("[Service Worker] Precaching App Shell,", cache);
-      // cache.addAll([
-      //   "/",
-      //   "/index.html",
-      //   "/js/app.js",
-      //   "/js/sparkly-text.js",
-      //   "/images/hoppy.jpg",
-      //   "/images/hoppy2.jpg",
-      //   "/images/hoppy3.png",
-      //   "/images/logo.svg",
-      // ]);
-      cache.add("/");
-      cache.add("/index.html");
-      cache.add("/images/hoppy.jpg");
-      cache.add("/images/hoppy2.jpg");
-      cache.add("/images/hoppy3.png");
-      cache.add("/js/app.js");
+      cache.addAll([
+        "/",
+        "/index.html",
+        "/js/app.js",
+        "/js/sparklyText.js",
+        "/images/hoppy.jpg",
+        "/images/hoppy2.jpg",
+        "/images/hoppy3.png",
+        "/images/logo.svg",
+      ]);
     })
   );
 });
