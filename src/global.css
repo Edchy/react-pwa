@@ -104,3 +104,6 @@ ul {
 .hero {
   min-height: 75vh;
 }
+.hero-title {
+  z-index: -10 !important;
+}
