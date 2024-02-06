@@ -10,7 +10,7 @@ self.addEventListener("install", (event) => {
         "/",
         "/index.html",
         "/js/app.js",
-        "/js/sparkly-text.js",
+        "/utils/sparkly-text.js",
         "/images/hoppy.jpg",
         "/images/hoppy2.jpg",
         "/images/hoppy3.png",
