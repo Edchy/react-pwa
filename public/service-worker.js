@@ -16,7 +16,12 @@ self.addEventListener("install", (event) => {
       //   "/images/hoppy3.png",
       //   "/images/logo.svg",
       // ]);
+      cache.add("/");
       cache.add("/index.html");
+      cache.add("/images/hoppy.jpg");
+      cache.add("/images/hoppy2.jpg");
+      cache.add("/images/hoppy3.png");
+      cache.add("/js/app.js");
     })
   );
 });
