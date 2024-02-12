@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../public/js/sparklyText";
+import "../utils/sparklyText";
 
 function Home() {
   return (
@@ -7,7 +7,7 @@ function Home() {
       <section className="hero">
         <sparkly-text number-of-sparkles="15">
           <h1 className="hero-title">
-            Hop into a World of Brews: Discover, Sip, and Savor!
+            Hop into a World of Brews: Discover, Sip, and Savor! 🍺
           </h1>
         </sparkly-text>
         <Link
@@ -25,7 +25,7 @@ function Home() {
           alt="a beer bottle with the hoppy logo on an orange background"
         />
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl">Lorem, ipsum dolor.</h2>
+          <h2 className="text-3xl">Lorem, 🍺 ipsum dolor.</h2>
 
           <p className="mt-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
